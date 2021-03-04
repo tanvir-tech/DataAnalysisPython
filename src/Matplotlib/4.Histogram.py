@@ -1,15 +1,10 @@
+import numpy as np
 from matplotlib import pyplot as plt
 from matplotlib import style
 
-#Histogram info
-x = [1,2,3,4,5]
-y = [2,4,5,6,10]
-plt.bar(x,y)        #  x,y, color
+#Histogram -----------------------------------Catagorise Quantitative data by ranges
 
-#graph info
-plt.title("Basic Graph")
-plt.xlabel(x)
-plt.ylabel(y)
-plt.legend()
+x = np.random.normal(170, 10, 250)
 
+plt.hist(x)
 plt.show()
